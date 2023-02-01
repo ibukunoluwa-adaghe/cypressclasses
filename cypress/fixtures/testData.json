@@ -1,0 +1,22 @@
+{
+  "validLoginCreds1" : {
+    "username" : "standard_user",
+    "password" : "secret_sauce"
+  },
+  "validLoginCreds2" : {
+    "username" : "locked_out_user",
+    "password" : "secret_sauce"
+  },
+  "validLoginCreds3" : {
+    "username" : "problem_user",
+    "password" : "secret_sauce"
+  },
+  "validLoginCreds4" : {
+    "username" : "performance_glitch_user",
+    "password" : "secret_sauce"
+  },
+  "inValidLoginCreds" : {
+    "username" : "standard_userss",
+    "password" : "secret_sauceee"
+  }
+}
