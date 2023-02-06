@@ -17,30 +17,19 @@ beforeEach(() => {
 describe('Login Module', function() { 
 // login with username standard_user
     it('Ensure user can login successfully', function() {
-        type.userNameField(data.validLoginCreds1.username)
-        type.passwordField(data.validLoginCreds1.password)
-        cy.wait (2000);
-        click.loginButton()
+        cy.login(data.validLoginCreds1.username, data.validLoginCreds1.password)
     })
     // login with username locked_out_user
     it('Ensure user can login successfully', function() {
-        type.userNameField(data.validLoginCreds2.username)
-        type.passwordField(data.validLoginCreds2.password)
-        cy.wait (2000);
-        click.loginButton()
+        cy.login(data.validLoginCreds2.username, data.validLoginCreds2.password)
     })
     // login with username problem_user
     it('Ensure user can login successfully', function() {
-        type.userNameField(data.validLoginCreds3.username)
-        type.passwordField(data.validLoginCreds3.password)
-        cy.wait (2000);
-        click.loginButton()
+        cy.login(data.validLoginCreds3.username, data.validLoginCreds3.password)
+       // cy.login()
     })
     // login with username performance_glitch_user
     it('Ensure user can login successfully', function() {
-        type.userNameField(data.validLoginCreds4.username)
-        type.passwordField(data.validLoginCreds4.password)
-        cy.wait (2000);
-        click.loginButton()
+        cy.login(data.validLoginCreds4.username, data.validLoginCreds4.password)
     })
 });
